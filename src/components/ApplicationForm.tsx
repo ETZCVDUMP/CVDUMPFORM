@@ -73,7 +73,10 @@ export default function ApplicationForm() {
       .upload(fileName, file);
 
     if (error) {
-      throw new Error('Failed to upload CV');
+      if (error.message.includes('Bucket not found')) {
+        throw new Error('Storage bucket not configured. Please contact support or check the setup instructions.');
+      }
+      throw new Error(`Failed to upload CV: ${error.message}`);
     }
 
     const { data: publicUrl } = supabase.storage

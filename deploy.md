@@ -16,9 +16,11 @@
 
 3. **Set up storage:**
    - Go to Storage in the Supabase dashboard
-   - Create a new bucket called `cvs`
-   - Set the bucket to public
-   - Configure file upload policies for PDFs
+   - Click "New bucket"
+   - Name it exactly `cvs` (lowercase)
+   - **IMPORTANT:** Check "Public bucket" option
+   - Click "Create bucket"
+   - The bucket policies will be automatically configured for public access
 
 4. **Deploy email function (optional):**
    - Sign up for Resend.com for email notifications

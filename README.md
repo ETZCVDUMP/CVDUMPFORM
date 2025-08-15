@@ -57,7 +57,12 @@ cp src/env.example .env
 
 1. Create a new Supabase project
 2. Run the migration from `supabase/migrations/001_create_applications_table.sql`
-3. Create a storage bucket named `cvs` and set it to public
+3. **CRITICAL: Create storage bucket for CV uploads:**
+   - Go to Storage in your Supabase dashboard
+   - Click "New bucket"
+   - Name it exactly `cvs` (lowercase)
+   - Set it to **Public bucket**
+   - Click "Create bucket"
 4. Get your project URL and anon key from Settings > API
 
 ### 4. Development
