@@ -165,7 +165,6 @@ export default function ApplicationForm() {
             <User className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Join Our Team</h1>
-          <p className="text-gray-600">Submit your application and let's build something amazing together</p>
         </div>
 
         <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 space-y-6">
