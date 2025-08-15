@@ -137,9 +137,6 @@ export default function ApplicationForm() {
         throw new Error('Failed to submit application');
       }
 
-      // Send notification email
-      await sendNotificationEmail(applicationData);
-
       toast.success('Application submitted successfully!');
       
       // Reset form
